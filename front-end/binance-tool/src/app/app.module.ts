@@ -9,6 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { DataService } from './data.service';
 
+
+import { ChartModule } from 'primeng/chart';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,8 @@ import { DataService } from './data.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

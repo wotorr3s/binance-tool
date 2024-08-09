@@ -1,1 +1,10 @@
-{{this.dataService.btcPrice}}
+<div *ngFor="let stock of this.dataService.openedPositions">
+    <div>
+        {{stock.symbol}}: {{stock.currentPrice | number: '2.4' }}<br>
+        quantity: {{stock.quantity}} <br>
+        value: {{stock.value| number: '2.4'}} <br>
+        Change: {{stock.change| number: '2.4'}} <br>
+    </div>
+    <br>
+    <br>
+</div>
